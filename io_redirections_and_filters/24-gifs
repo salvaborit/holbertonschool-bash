@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -aR | LC_ALL=C sort --ignore-case | find -name *.gif -type f
+find . -type f -empty -printf "%f \n"
