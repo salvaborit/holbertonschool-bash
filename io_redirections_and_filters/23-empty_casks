@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -printf
+find . -size 0 -printf
