@@ -1,1 +1,1 @@
-This project will cover permissions in the shell.
+2 Shell permissions projects

@@ -1,1 +1,1 @@
-This project is about learning the shell.
+2 HBTN Shell projects repo

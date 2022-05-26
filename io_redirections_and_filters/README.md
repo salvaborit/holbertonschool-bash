@@ -1,1 +1,1 @@
-This project is about input/output redirections and filters in Shell.
+3 Shell i/o redirections and filters projects
