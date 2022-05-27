@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH | cut -d ':' | tr ' ' '\n'
+echo $PATH | cut -d ":"
