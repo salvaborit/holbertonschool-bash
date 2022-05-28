@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(($((water#$WATER))+$((stir#$STIR))))
+echo $((($WATER | tr 'water' '01234')+($STIR | tr 'stir' '01234')))
