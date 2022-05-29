@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script lists files in cwd without number and dash, name only
 
-for FILE in "ls -l"
+for FILE in $(ls -l)
 do
 	printf "%s\n" "$FILE"
 done
