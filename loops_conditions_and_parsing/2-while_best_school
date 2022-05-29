@@ -4,10 +4,10 @@
 # Start counter
 n=1
 # Iterate loop 10 times
-while [ "$lines" -le 10 ] ; 
+while [ "$n" -le 10 ] 
 do 
 	# Print "Best School \n"
 	printf "%s\n" "Best School"
 	# Adds 1 to counter
 	((n++))
-; done
+done
