@@ -1,4 +1,13 @@
 #!/usr/bin/env bash
 # This script prints "Best School" 10 times
-lines=$(wc -l)
-while [ "$lines" -le 10 ] ; do printf "%s\n" "Best School"; done
+
+# Start counter
+n=1
+# Iterate loop 10 times
+while [ "$lines" -le 10 ] ; 
+do 
+	# Print "Best School \n"
+	printf "%s\n" "Best School"
+	# Adds 1 to counter
+	((n++))
+; done
