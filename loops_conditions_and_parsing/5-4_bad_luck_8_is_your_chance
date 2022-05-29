@@ -8,11 +8,14 @@ do
 	if [[ $n -eq 4 ]]
 	then
 		printf "%s\n" "bad luck"
+		((n++))
 	elif [[ $n -eq 8 ]]
 	then
 		printf "%s\n" "good luck"
+		((n++))
 	else
 		printf "%s\n" "Best School"
+		((n++))
 	fi
 done
 	
