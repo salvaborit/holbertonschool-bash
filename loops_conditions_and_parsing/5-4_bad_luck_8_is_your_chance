@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script loops 10 times and prints "bad luck" on the 4th iteration, "good luck" on the 8th and "Best School" on all the rest
+
+n=0
+
+while [[ $n -le 10 ]]
+do
+	if [[ $n -eq 4 ]]
+	then
+		printf "%s\n" "bad luck"
+	elif [[ $n -eq 8 ]]
+	then
+		printf "%s\n" "good luck"
+	else
+		printf "%s\n" "Best School"
+	fi
+done
+	
