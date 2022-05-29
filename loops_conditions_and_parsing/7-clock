@@ -9,12 +9,14 @@ do
 	printf "%s\n" "Hour: $HOUR"
 	((HOUR++))
 	
-	if [[ $MIN -le 59 ]]
-	then
+	while [ $MIN -le 59 ]
+	do
 		printf "%s\n" "$MIN"
 		((MIN++))
-	elif [[ $MIN -eq 60 ]]
-	then
-		MIN=1
-	fi
+
+		if [[ $MIN -eq 60 ]]
+		then
+			MIN=1
+		fi
+	done
 done
