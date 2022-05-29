@@ -9,17 +9,17 @@ COUNTER=1
 while [ $COUNTER -le 20 ]
 do
 	case $COUNTER in
-		-eq 4)
+		4 )
 			printf "%s\n" "$COUNTER"
 			printf "%s\n" "bad luck from China"
 			((n++))
 			;;
-		-eq 9)
+		9)
 			printf "%s\n" "$COUNTER"
 			printf "%s\n" "bad luck from Japan"
 			((n++))
 			;;
-		-eq 17)
+		17)
 			printf "%s\n" "$COUNTER"
 			printf "%s\n" "bad luck from Italy"
 			((n++))
