@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script prints "Best School" 10 times
 i="Best School"
-for i in {1..10}; do printf $i "%s\n"; done
+for i in {1..10}; do printf "%s\n" $i; done
