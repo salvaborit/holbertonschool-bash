@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# This script will display the time for 12h and 59m
+
+HOUR=0
+MIN=1
+
+while [ $HOUR -le 12 ]
+do
+	printf "%s\n" "Hour: $HOUR"
+	((HOUR++))
+	
+	if [[ $MIN -le 59 ]]
+	then
+		printf "%s\n" "$MIN"
+		((MIN++))
+	elif [[ $MIN -eq 60 ]]
+	then
+		MIN=1
+	fi
+done
