@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script lists files in cwd without number and dash, name only
 
-LIST=$(ls | cut -d "-" -f 2)
+LIST=$(find . -type f | cut -d "-" -f 2)
 
 for FILE in $LIST
 do
