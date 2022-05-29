@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 # This script loops 10 times and prints "bad luck" on the 4th iteration, "good luck" on the 8th and "Best School" on all the rest
 
-n=0
+n=1
 
 while [[ $n -le 10 ]]
 do
-	if [[ $n -eq 4 ]]
+	if [[ $n -eq 3 ]]
 	then
 		printf "%s\n" "bad luck"
 		((n++))
-	elif [[ $n -eq 8 ]]
+	elif [[ $n -eq 7 ]]
 	then
 		printf "%s\n" "good luck"
 		((n++))
