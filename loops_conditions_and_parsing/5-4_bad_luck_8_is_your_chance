@@ -5,7 +5,7 @@ n=1
 
 while [[ $n -le 10 ]]
 do
-	if [[ $n -eq 3 ]]
+	if [[ $n -eq 4 ]]
 	then
 		printf "%s\n" "bad luck"
 		((n++))
