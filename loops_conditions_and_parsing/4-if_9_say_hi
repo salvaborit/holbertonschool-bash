@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script prints "Best School" but for the 9th iteration prints "Best School" followed by "Hi" on a new line.
+
+n=1
+while [ $n -le 10 ]
+do
+	printf "%s\n" "Best School"
+	((n++))
+	
+	if [[ $n -eq 9 ]]
+	then
+		printf "%s\n" "Hi"
+	fi
+done
+
