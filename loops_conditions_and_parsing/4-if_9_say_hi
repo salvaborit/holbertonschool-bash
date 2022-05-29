@@ -7,7 +7,7 @@ do
 	printf "%s\n" "Best School"
 	((n++))
 	
-	if [[ $n -eq 9 ]]
+	if [[ $n -eq 10 ]]
 	then
 		printf "%s\n" "Hi"
 	fi
