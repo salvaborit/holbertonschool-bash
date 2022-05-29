@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script prints "Best School" 10 times
-lines="(wc -l)"
+lines=$wc -l
 while [ "$lines" -eq 10 ] ; do printf "%s\n" "Best School"; done
