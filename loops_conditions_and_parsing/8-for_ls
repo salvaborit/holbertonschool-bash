@@ -6,4 +6,5 @@ LIST=$(ls)
 for FILE in $LIST
 do
 	printf "%s\n" "$FILE"
+	cut -d "-" -f 2
 done
