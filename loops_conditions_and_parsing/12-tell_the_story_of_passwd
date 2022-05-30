@@ -2,12 +2,10 @@
 # This script displays /etc/passwd content in the following format
 # The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO
 
-IFS=":"
-PASSWD=$(cat /etc/passwd)
-set "$PASSWD"
+PASSWD="/etc/passwd"
 
-while [[ -s $PASSWD ]]
+while  IFS=: read -r "$1" "$2" "$3" "$4" "$5" "$6" "$7"
 do
 	printf "%s\n" "The user $1 is part of the $4 gang, lives in $6 and rides $7. $3's place is protected by the passcode $2, more info about the user here: $5"
 
-done
+done < $PASSWD
