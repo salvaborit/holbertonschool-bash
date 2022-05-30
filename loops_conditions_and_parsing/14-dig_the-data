@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 # This is a script that sorts visitors' IP and HTTP status code by number of ocurrences
 
-awk '{ print $1, $9 }' apache-access.log
-uniq -c
-sort -nr
+awk '{ print $1, $9 }' apache-access.log | uniq -c | sort -nr
 
