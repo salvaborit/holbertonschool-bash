@@ -10,6 +10,20 @@ n=1
 
 while [ $n -le 100 ]
 do
-	printf "%s\n" "$n"
-	((n++))
+	if [[ $((n%5)) -eq 0 && $((n%3)) -eq 0 ]]
+	then
+		printf "%s\n" "FizzBuzz"
+		((n++))
+	elif [[ $((n%3)) -eq 0 ]]
+	then
+		printf "%s\n" "Fizz"
+		((n++))
+	elif [[ $((n%5)) -eq 0 ]]
+	then
+		printf "%s\n" "Buzz"
+		((n++))
+	else
+		printf "%s\n" "$n"
+		((n++))
+	fi
 done
