@@ -3,4 +3,6 @@
 
 awk '{ print $1, $9 }' apache-access.log
 uniq -c
+sort
 sort -nr
+
