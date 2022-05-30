@@ -5,4 +5,7 @@
 IFS=":"
 PASSWD=$(cat /etc/passwd)
 
-printf "%s\n" "$PASSWD"
+while [[ -s $PASSWD ]]
+do
+	printf "%s\n" "$PASSWD"
+done
