@@ -2,7 +2,6 @@
 # This is a script that sorts visitors' IP and HTTP status code by number of ocurrences
 
 awk '{ print $1, $9 }' apache-access.log
-sort
 uniq -c
 sort -nr
 
