@@ -11,4 +11,5 @@ n=1
 while [ $n -le 100 ]
 do
 	printf "%s\n" "$n"
+	((n++))
 done
