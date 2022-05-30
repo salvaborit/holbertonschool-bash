@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script displays /etc/passwd content in the following format
+# The user USERNAME is part of the GROUP_ID gang, lives in HOME_DIRECTORY and rides COMMAND/SHELL. USER ID's place is protected by the passcode PASSWORD, more info about the user here: USER ID INFO
+
+IFS=":"
+PASSWD=$(cat /etc/passwd)
+
+printf "%s\n" "$PASSWD"
