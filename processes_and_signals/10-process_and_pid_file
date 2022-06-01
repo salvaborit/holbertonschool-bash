@@ -8,11 +8,12 @@
 
 touch /var/run/myscript.pid
 pgrep -f /var/run/myscript.pid > /var/run/archivotemp
-mv /var/run/archivotemp /var/run/myscript.pid
+cp /var/run/archivotemp /var/run/myscript.pid
+rm /var/run/archivotemp
 
 trap "echo I hate the kill command" SIGTERM
 trap "echo Y U no love me ?!" SIGINT
-trap "rm /var/run/myscript.pid; pgrep -f /var/run/myscript.pid" SIGQUIT SIGTERM
+trap "rm /var/run/myscript.pid; pkill -f 4-to_infinity_and_beyond" SIGQUIT SIGTERM
 
 while true
 do
