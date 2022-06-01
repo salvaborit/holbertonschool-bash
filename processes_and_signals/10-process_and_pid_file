@@ -7,16 +7,14 @@
 # Deletes the file /var/run/myscript.pid and terminates itself when receiving a SIGQUIT or SIGTERM signal
 
 touch /var/run/myscript.pid
-pgrep -f /var/run/myscript.pid > /run/temp
-mv temp /var/run/myscript.pid
+pgrep -f /var/run/myscript.pid > /var/run/archivotemp
+mv /var/run/archivotemp /var/run/myscript.pid
+
+trap "echo I hate the kill command" SIGTERM
+trap "echo Y U no love me ?!" SIGINT
+trap "rm /var/run/myscript.pid; pgrep -f /var/run/myscript.pid" SIGQUIT SIGTERM
 
 while true
 do
 	printf "%s\n" "To infinity and beyond"
-	trap -arg SIGTERM
-	printf "%s\n" "I hate the kill command"
-	trap -arg SIGINT
-	printf "%s\n" "Y U no love me?!"
-	trap -arg SIGQUIT, SIGTERM
-	rm /var/run/myscript.pid
 done
