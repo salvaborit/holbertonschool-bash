@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# This script prints "I am alive!" to /tmp/my_process every 2 seconds
+
+while true
+do
+	printf "%s\n" "I am alive!"
+sleep 2
+done
