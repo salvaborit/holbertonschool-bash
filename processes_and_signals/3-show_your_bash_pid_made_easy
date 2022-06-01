@@ -2,4 +2,4 @@
 # This script displays the PID, along with the process name, of processes whose name contain the word bash
 
 pgrep bash
-echo $$
+pgrep ./3-show_your_bash_pid_made_easy
