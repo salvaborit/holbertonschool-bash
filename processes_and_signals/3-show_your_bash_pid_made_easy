@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # This script displays the PID, along with the process name, of processes whose name contain the word bash
 
-printf "%s\n" "$(pidof -s bash) bash"
-printf "%s\n" "$($$) bash"
+echo "$(pgrep bash)"
+echo $$
