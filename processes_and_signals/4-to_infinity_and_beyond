@@ -4,4 +4,5 @@
 while [ 1 ]
 do
 	printf "%s\n" "To infinity and beyond"
+	printf "%s\n" "sleep 2"
 done
