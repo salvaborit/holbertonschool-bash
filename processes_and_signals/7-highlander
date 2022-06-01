@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# This script prints:
+# -To infinity and beyond
+# sleep 2
+# -I am invincible!! when SIGTERM received
+
+while true
+do
+	printf "%s\n" "To infinity and beyond"
+	sleep 2
+	trap arg 'echo "I am invincible!!"' SIGTERM
+done
