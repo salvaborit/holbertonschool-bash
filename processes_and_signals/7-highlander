@@ -6,7 +6,7 @@
 
 while true
 do
-	printf "%s\n" "To infinity and beyond"
+	echo "To infinity and beyond"
 	sleep 2
 	trap -arg SIGTERM
 	echo "I am invincible!!"
