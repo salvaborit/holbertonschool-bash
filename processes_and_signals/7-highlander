@@ -6,8 +6,8 @@
 
 while true
 do
-	echo "To infinity and beyond"
+	printf "%s\n" "To infinity and beyond"
 	sleep 2
 	trap -arg SIGTERM
-	echo "I am invincible!!"
+	printf "%s\n" "I am invincible!!!"
 done
