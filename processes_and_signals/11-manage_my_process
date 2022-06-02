@@ -5,21 +5,21 @@ case $1 in
 	start)
 		sudo ./manage_my_process
 		echo "$$" > /var/run/my_process.pid
-		printf "%s\n" "manage_my_process started"
+		echo "manage_my_process started"
 		;;
 	stop)
 		pkill -f /manage_my_process
 		rm /var/run/my_process.pid
-		printf "%s\n" "manage_my_process stopped"
+		echo "manage_my_process stopped"
 		;;
 	restart)
 		pkill -f /manage_my_process
 		rm /var/run/my_process.pid
 		sudo ./manage_my_process
 		echo "$$" > /var/run/my_process.pid
-		printf "%s\n" "manage_my_process restarted"
+		echo "manage_my_process restarted"
 		;;
 	*)
-		printf "%s\n" "Usage: manage_my_process {start|stop|restart}"
+		echo "Usage: manage_my_process {start|stop|restart}"
 		;;
-	esac
+esac
