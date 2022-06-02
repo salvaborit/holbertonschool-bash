@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 # This script manages the manage_my_process process
 
+cd 
 case $1 in
 	start)
-		/manage_my_process
+		./manage_my_process
 		echo "$$" > /var/run/my_process.pid
 		printf "%s\n" "manage_my_process started"
 		;;
@@ -15,7 +16,7 @@ case $1 in
 	restart)
 		pkill -f /manage_my_process
 		rm /var/run/my_process.pid
-		/manage_my_process
+		./manage_my_process
 		echo "$$" > /var/run/my_process.pid
 		printf "%s\n" "manage_my_process restarted"
 		;;
