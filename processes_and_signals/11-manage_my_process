@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script manages the manage_my_process process
+
+case $1 in
+	start)
+		/manage_my_process
+		echo "$$" > /var/run/my_process.pid
+		printf "%s\n" "manage_my_process started"
+	stop)
+		pkill -f /manage_my_process
+		rm /manage_my_process
+		printf "%s\n" "
+	restart)
+	*)
+esac
