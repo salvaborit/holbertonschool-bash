@@ -1,1 +1,1 @@
-2 Shell permissions projects
+This directory contains the Shell permissions project files for Holberton.
