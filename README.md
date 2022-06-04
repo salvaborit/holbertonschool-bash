@@ -1,1 +1,1 @@
-2 HBTN Shell projects repo
+This repo contains the Shell project directories (HBTN).
