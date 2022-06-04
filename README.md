@@ -1,1 +1,1 @@
-This repo contains the Shell project directories (HBTN).
+This repo contains the Shell project directories for Holberton.
